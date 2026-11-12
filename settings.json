@@ -1,0 +1,7 @@
+{
+  "_help": "PRIVATE settings. Never shown to visitors. Restart the server after editing.",
+  "port": 3000,
+  "adminEmail": "jadengon6@gmail.com",
+  "feePercent": 20,
+  "minAge": 16
+}

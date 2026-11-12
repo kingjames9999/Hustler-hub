@@ -1,0 +1,21 @@
+{
+  "_help": "PUBLIC site content. Edit the words here without touching any code. [EDIT HERE] items need your real details.",
+  "brand": "Side Hustle Hub",
+  "owner": "Jaden Jared Sibanda",
+  "tagline": "Find a side hustle. Or find someone to do yours.",
+  "whatsapp": "263716909752",
+  "phones": ["+263 71 690 9752", "+263 77 498 5008"],
+  "email": "jadengon6@gmail.com",
+  "hours": "[EDIT HERE: working hours]",
+  "feePercent": 20,
+  "minAge": 16,
+  "heroWords": ["side hustle", "extra income", "part-time work", "reliable help"],
+  "categories": ["Delivery & errands", "Flyers & promotion", "Tutoring", "Cleaning", "Tech & design", "Selling", "Other"],
+  "nav": [
+    {"label": "Home", "href": "index.html"},
+    {"label": "Browse", "href": "browse.html"},
+    {"label": "How it works", "href": "index.html#how"},
+    {"label": "FAQ", "href": "index.html#faq"},
+    {"label": "Contact", "href": "index.html#contact"}
+  ]
+}

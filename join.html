@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#060b1f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Cpath d=%27M16 2l12 14-12 14L4 16z%27 fill=%27%23a07bff%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="motion.css">
+<title>Sign Up or Log In | Side Hustle Hub</title>
+<meta name="description" content="Create your free Side Hustle Hub account. Members must be 16 or older and upload proof of age.">
+</head><body>
+<main><section class="pagehead"><div class="wrap" style="max-width:640px">
+  <div class="tabs"><button class="btn" id="t1">Sign up</button><button class="btn ghost" id="t2">Log in</button></div>
+  <form class="glass card" id="sf" novalidate>
+    <h1 style="font-size:2rem">Create your <span class="gt">account</span></h1>
+    <p class="lead" style="margin:8px 0 0">Your proof of age is checked before you can post or apply.</p>
+    <label>I am...</label>
+    <div class="pick"><input type="radio" name="role" id="r1" value="seeker" checked><label for="r1">Finding a side hustle</label><input type="radio" name="role" id="r2" value="poster"><label for="r2">Finding a side hustler</label><input type="radio" name="role" id="r3" value="both"><label for="r3">Both</label></div>
+    <div class="row2"><div><label for="nm">Full name</label><input id="nm" autocomplete="name"></div><div><label for="ph">WhatsApp / phone</label><input id="ph" type="tel" autocomplete="tel" placeholder="+263 ..."></div></div>
+    <div class="row2"><div><label for="em">Email</label><input id="em" type="email" autocomplete="email"></div><div><label for="eco">EcoCash number (optional)</label><input id="eco" type="tel" placeholder="Same as phone if blank"></div></div>
+    <div class="row2"><div><label for="pw">Password (6+ characters)</label><input id="pw" type="password" autocomplete="new-password"></div><div><label for="dob">Date of birth</label><input id="dob" type="date"></div></div>
+    <label for="proof">Proof of age (photo of ID, birth certificate or school ID)</label><input id="proof" type="file" accept="image/*">
+    <label class="chk"><input type="checkbox" id="age"><span id="agetxt">I am 16 or older and the photo is mine.</span></label>
+    <p class="err" id="err" role="alert"></p>
+    <button class="btn" type="submit">Create account</button>
+  </form>
+  <form class="glass card" id="lf" hidden>
+    <h1 style="font-size:2rem">Welcome <span class="gt">back</span></h1>
+    <label for="le">Email</label><input id="le" type="email" autocomplete="email" required>
+    <label for="lp">Password</label><input id="lp" type="password" autocomplete="current-password" required>
+    <p class="err" id="lerr" role="alert"></p>
+    <button class="btn" type="submit">Log in</button>
+  </form>
+</div></section></main>
+<script src="common.js"></script><script src="effects.js"></script><script src="join.js"></script>
+</body></html>

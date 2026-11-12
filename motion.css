@@ -1,0 +1,36 @@
+/* ===== Side Hustle Hub: animations (switched off for people who prefer less motion) ===== */
+@keyframes drift1{50%{transform:translate(14vmax,10vmax) scale(1.15)}}
+@keyframes drift2{50%{transform:translate(-12vmax,8vmax) scale(.9)}}
+@keyframes drift3{50%{transform:translate(10vmax,-12vmax) scale(1.2)}}
+.aurora i:nth-child(1){animation:drift1 24s ease-in-out infinite}
+.aurora i:nth-child(2){animation:drift2 28s ease-in-out infinite}
+.aurora i:nth-child(3){animation:drift3 32s ease-in-out infinite}
+@keyframes sheen{to{background-position:200% 0}}
+.gt{animation:sheen 7s linear infinite}
+@keyframes spin{to{--a:360deg}}
+.glass:hover::before,.sample::before{animation:spin 5s linear infinite;opacity:1}
+@keyframes float{50%{transform:translateY(-14px)}}
+.sample{animation:float 6s ease-in-out infinite}
+.chipf.a{animation:float 5s ease-in-out -1s infinite}
+.chipf.b{animation:float 7s ease-in-out -3s infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+.ring{animation:rot 40s linear infinite}.ring.two{animation:rot 60s linear infinite reverse}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.marq div{animation:scroll 32s linear infinite}
+.marq:hover div{animation-play-state:paused}
+@keyframes rip{to{transform:scale(4);opacity:0}}
+@keyframes shim{to{background-position:-200% 0}}
+@keyframes pop{from{opacity:0;transform:scale(.9) translateY(16px)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%,100%{box-shadow:0 0 0 18px rgba(37,211,102,0)}}
+.wa{animation:pulse 2.6s infinite}
+@keyframes enter{from{opacity:0;transform:translateY(-14px)}}
+.top{animation:enter .7s both}
+body{animation:fadein .6s both}@keyframes fadein{from{opacity:0}}
+/* scroll reveal (effects.js adds the classes) */
+.rv{opacity:0;transform:translateY(28px) scale(.98);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.tilt{transition:transform .25s ease-out;transform-style:preserve-3d}
+.step .dot{transition:transform .5s}.step:hover .dot{transform:rotate(360deg) scale(1.1)}
+.card:not(.rv){transition:transform .3s,box-shadow .3s}
+@media(hover:hover){.card:hover{transform:translateY(-6px)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
